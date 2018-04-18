@@ -1,0 +1,38 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+.collapse.in {
+	display: block;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+table {
+	text-align: center;
+}
+
+.offline .status {
+	font-family: 'Arial'
+}
+
+td a {
+	font-size: 20px;
+}
+
+td img {
+	border-style: solid;
+	border-color: white;
+}
+
+.row {
+	padding-top: 2.5%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TwitchTV notifications</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<div>
+					<h2 align="center">Twitch TV users activity</h2>
+
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					  	<a class="navbar-brand" href="#"><strong>TWITCH STREAMERS</strong></a>
+					  	<button class="nav-link btn btn-primary" id="refresh"><i class="fa fa-refresh" style="color: black"></i></button>
+					  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+					    	<span class="navbar-toggler-icon"></span>
+					  	</button>
+
+					  	<div class="collapse navbar-collapse" id="navContent">
+					    	<ul class="navbar-nav ml-auto">
+
+					      		<li class="nav-item active">
+					        		<a id="show-all" class="nav-link" href="#"><i class="fa fa-user-circle"></i> ALL<span class="sr-only">(current)</span></a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a id="show-on" class="nav-link" href="#"><i class="fa fa-dot-circle-o" style="color: #00ff22"></i> ONLINE</a>
+					      		</li>
+					      		<li class="nav-item">
+					        		<a id="show-off" class="nav-link" href="#"><i class="fa fa-dot-circle-o"></i> OFFLINE</a>
+					      		</li>
+					    	</ul>
+					  	</div>
+					</nav>
+				</div>
+
+				<div class="table-responsive">
+					<table class="table table-dark table-hover" id="twitchers">
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
